@@ -103,7 +103,7 @@ classDiagram
 
     class Cliente
 
-    ConsultaDeVentas +.. Builder : clase interna estática
+    ConsultaDeVentas *-- Builder : clase interna estática
     Builder ..> ConsultaDeVentas : build() crea
     Cliente ..> Builder : encadena métodos
 ```
